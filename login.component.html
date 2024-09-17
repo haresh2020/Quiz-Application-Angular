@@ -1,0 +1,36 @@
+<div *ngIf="logShow">
+    <div id="sign">
+        <button (click)="signPage()">Signup</button><br><br>
+        <div *ngIf="showsign">
+            <img [src]="data" width="100" height="100"/><br><br>
+            Name:<input type="text" [(ngModel)]="dataModel.name"><br><br>
+            UserID:<input type="text" [(ngModel)]="dataModel.userId"><br><br>
+            Password:<input type="text" [(ngModel)]="dataModel.password"><br><br>
+            Email:<input type="text" [(ngModel)]="dataModel.email"><br><br>
+            <!-- Stream:<input type="text" [(ngModel)]="dataModel.stream"><br><br> -->
+            <!-- <input type="file" (change)=upload($event) ngModel=""> -->
+            <button (click)="signUp()">Signup</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="log">
+        <button (click)="logPage()">Login</button><br><br>
+        <div  *ngIf="showlog">
+            UserID:<input type="text" [(ngModel)]="entModel.userId"><br><br>
+            Password:<input type="text" [(ngModel)]="entModel.password"><br><br>
+            <button (click)="logIn()">Login</button>
+        </div>
+    </div>
+    
+</div>
+<div *ngIf="quesShow">
+    <app-questpage></app-questpage>
+</div>
+
+<div>
+    <div *ngIf="adminShow">
+       <app-admin></app-admin>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.log{
+    background-color: aliceblue;
+    display:flex;
+    align-items: flex-start;
+}
+
+.sign{
+    background-color:bisque;
+    display:flex;
+    align-items:flex-end;
+}

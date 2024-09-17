@@ -1,0 +1,15 @@
+Enter your Stream:<input type="text" id="stream"  value="java"><br><br>
+<!-- [(ngModel)]="stream.Stream" -->
+<button (click)="get()">Start</button>
+<div>
+    <p>{{userId}}</p>
+</div>
+<div *ngFor="let a of obj;let i=index">
+    Question{{i+1}}:{{a.question}}<br><br>
+    Option1<input type="radio" id="ans"  value={{a.option1}}>{{a.option1}}<br><br>
+    Option2<input type="radio" id="ans"  value={{a.option2}}>{{a.option2}}<br><br>
+    Option3<input type="radio" id="ans"  value={{a.option3}}>{{a.option3}}<br><br>
+    Option4<input type="radio" id="ans"  value={{a.option4}}>{{a.option4}}<br><br>
+</div>
+<button (click)="displayRadioValue()">Submit</button>
+<!-- <button (click)="ansData()">cal</button> -->
